@@ -7,6 +7,7 @@ export {}
 declare global {
   const Footer: typeof import('./components/common/Footer.jsx')['default']
   const Link: typeof import('react-router-dom')['Link']
+  const Mapa: typeof import('./components/Mapa.jsx')['default']
   const NavLink: typeof import('react-router-dom')['NavLink']
   const Navbar: typeof import('./components/common/Navbar.jsx')['default']
   const Navigate: typeof import('react-router-dom')['Navigate']
