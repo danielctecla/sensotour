@@ -10,192 +10,133 @@ import {
 
 
 const experiences = [
-    {   
-        //This is to show the best experiences in Mexico
-        name: '',
-        experiences: [
-            {   
-                id: 'chichen-itza',
-                name: 'Chichen Itza',
-                description: 'Chichén Itzá es uno de los sitios arqueológicos más importantes de México y una de las Nuevas Maravillas del Mundo. Fue una de las ciudades más importantes de la civilización maya y su arquitectura es un testimonio de su grandeza y esplendor. En Chichén Itzá se pueden admirar edificios como la Pirámide de Kukulkán, el Templo de los Guerreros, el Observatorio, el Juego de Pelota, entre otros. Es un lugar ideal para conocer la historia y la cultura de México.',
-                image: 'https://th.bing.com/th/id/OIP.-ES51-95mOpYB_tlQeiMkQHaFj?rs=1&pid=ImgDetMain',
-                image2: 'https://th.bing.com/th/id/OIP.-ES51-95mOpYB_tlQeiMkQHaFj?rs=1&pid=ImgDetMain',
-                image3: 'https://th.bing.com/th/id/OIP.-ES51-95mOpYB_tlQeiMkQHaFj?rs=1&pid=ImgDetMain',
-                image4: 'https://th.bing.com/th/id/OIP.-ES51-95mOpYB_tlQeiMkQHaFj?rs=1&pid=ImgDetMain',
-                alt_image: 'Chichen Itza',
-                shortDescription: 'Chichén Itzá es uno de los sitios arqueológicos más importantes de México y una de las Nuevas Maravillas del Mundo.',
-                prices: [
-                    {
-                        name:'Entrada general',
-                        average: 600.00,
-                    },
-                    {
-                        name: 'Entrada gratis los domingos para mexicanos',
-                        average: 'gratis',
-                    }
-                ],
-                reviews: 5,
-                totalcount: 1097
-                
-            },
-            {
-                id: 'teotihuacan',
-                name: 'Teotihuacan',
-                description: 'Teotihuacán es una de las ciudades prehispánicas más importantes de México y una de las más visitadas por los turistas. Fue una de las ciudades más grandes y poderosas de Mesoamérica y su arquitectura es un testimonio de su grandeza y esplendor. En Teotihuacán se pueden admirar edificios como la Pirámide del Sol, la Pirámide de la Luna, la Calzada de los Muertos, el Templo de Quetzalcóatl, entre otros. Es un lugar ideal para conocer la historia y la cultura de México.',
-                image: 'https://cdn.britannica.com/42/178942-050-5CF05C54/Pyramid-Moon-Teotihuacan-Mexico.jpg',
-                image2: 'https://cdn.britannica.com/42/178942-050-5CF05C54/Pyramid-Moon-Teotihuacan-Mexico.jpg',
-                image3: 'https://cdn.britannica.com/42/178942-050-5CF05C54/Pyramid-Moon-Teotihuacan-Mexico.jpg',
-                image4: 'https://cdn.britannica.com/42/178942-050-5CF05C54/Pyramid-Moon-Teotihuacan-Mexico.jpg',
-                alt_image: 'Teotihuacan',
-                shortDescription: 'Teotihuacán es una de las ciudades prehispánicas más importantes de México y una de las más visitadas por los turistas.',
-                prices: [
-                    {
-                        name:'Entrada general',
-                        average: 80.00,
-                    },
-                    {
-                        name: 'Entrada gratis los domingos para mexicanos',
-                        average: 'gratis',
-                    }
-                ],
-                reviews: 4,
-                totalcount: 665,
-                inclution: [
-                    {
-                        name: 'Física'
-                    },
-                    {
-                        name: 'Visual'
-                    },
-                    {
-                        name: 'Auditiva'
-                    },
-                    {
-                        name: 'Pet-friendly'
-                    },
-                    {
-                        name: 'Genero'
-                    },
-                    {
-                        name: 'Edad'
-                    },
-                    {
-                        name: 'Emocional'
-                    }
-                ]
-            },
-            {
-                id: 'palenque',
-                name: 'Palenque',
-                description: 'Palenque es uno de los sitios arqueológicos más importantes de México y una de las ciudades más impresionantes de la civilización maya. Fue una de las ciudades más importantes de Mesoamérica y su arquitectura es un testimonio de su grandeza y esplendor. En Palenque se pueden admirar edificios como el Templo de las Inscripciones, el Palacio, el Templo de la Cruz, el Templo del Sol, entre otros. Es un lugar ideal para conocer la historia y la cultura de México.',
-                image: 'https://www.bonplanvoyage.net/wordpress2012/wp-content/uploads/temple-palenque-chiapas-e1613131582383.jpg',
-                image2: 'https://www.bonplanvoyage.net/wordpress2012/wp-content/uploads/temple-palenque-chiapas-e1613131582383.jpg',
-                image3: 'https://www.bonplanvoyage.net/wordpress2012/wp-content/uploads/temple-palenque-chiapas-e1613131582383.jpg',
-                image4: 'https://www.bonplanvoyage.net/wordpress2012/wp-content/uploads/temple-palenque-chiapas-e1613131582383.jpg',
-                shortDescription: 'Palenque es uno de los sitios arqueológicos más importantes de México y una de las ciudades más impresionantes de la civilización maya.',
-                prices: [
-                    {
-                        name:'Entrada general',
-                        average: 80.00,
-                    },
-                    {
-                        name: 'Entrada gratis los domingos para mexicanos',
-                        average: 'gratis',
-                    }
-                ],
-                reviews: 4,
-                totalcount: 398,
-                inclution: [
-                    {
-                        name: 'Física'
-                    },
-                    {
-                        name: 'Visual'
-                    },
-                    {
-                        name: 'Auditiva'
-                    },
-                    {
-                        name: 'Pet-friendly'
-                    },
-                    {
-                        name: 'Genero'
-                    },
-                    {
-                        name: 'Edad'
-                    },
-                    {
-                        name: 'Emocional'
-                    }
-                ]
-            },
-            {   
-                id: 'cancun',
-                name: 'Cancun',
-                description: 'Cancún es uno de los destinos turísticos más populares de México y uno de los más visitados en el mundo. Sus playas de arena blanca, aguas turquesas y clima cálido lo convierten en un lugar ideal para disfrutar de unas vacaciones inolvidables. En Cancún se pueden practicar actividades como el buceo, el snorkel, el kayak, el paddleboard, el parasailing, entre otros. Es un lugar ideal para relajarse, divertirse y disfrutar de la naturaleza en medio del Caribe.',
-                image: 'https://expertvagabond.com/wp-content/uploads/cancun-things-to-do-guide.jpg',
-                image2: 'https://expertvagabond.com/wp-content/uploads/cancun-things-to-do-guide.jpg',
-                image3: 'https://expertvagabond.com/wp-content/uploads/cancun-things-to-do-guide.jpg',
-                image4: 'https://expertvagabond.com/wp-content/uploads/cancun-things-to-do-guide.jpg',
-                alt_image: 'Cancun',
-                shortDescription: 'Cancún es uno de los destinos turísticos más populares de México y uno de los más visitados en el mundo.',
-                prices: [
-                    {
-                        name:'libre acceso',
-                        average: 0,
-                    },
-                    {
-                        
-                    }
-                ],
-                reviews: 5,
-                totalcount: 1665,
-                inclution: [
-                    {
-                        name: 'Física'
-                    },
-                    {
-                        name: 'Visual'
-                    },
-                    {
-                        name: 'Auditiva'
-                    },
-                    {
-                        name: 'Pet-friendly'
-                    },
-                    {
-                        name: 'Genero'
-                    },
-                    {
-                        name: 'Edad'
-                    },
-                    {
-                        name: 'Emocional'
-                    }
-                ]
-            }
-        ]
-    },
     {
         name: 'Ciudad de Mexico',
         experiences:[
+            {
+                id: 'castillo-chapultepec',
+                name: 'Castillo Chapultepec',
+                description: 'El Bosque de Chapultepec es uno de los parques urbanos más grandes del mundo y uno de los más visitados en la Ciudad de México. En él se encuentran diversos atractivos turísticos como el Castillo de Chapultepec, el Museo de Historia Natural, el Museo de Arte Moderno, el Lago de Chapultepec, el Zoológico de Chapultepec, entre otros. Es un lugar ideal para disfrutar de la naturaleza, la cultura y la historia en medio de la ciudad.',
+                image: 'https://mymodernmet.com/wp/wp-content/uploads/2020/05/Castillo-Chapultepec-4.jpg',
+                corousel:[
+                    {
+                        path: 'https://www.mdzol.com/u/fotografias/m/2021/5/10/f1456x819-1054881_1225251_5050.jpg'
+                    },
+                    {
+                        path: 'https://i1.wp.com/agendasettingdiario.com/wp-content/uploads/2019/04/Chapul.jpg?fit=1200%2C674&ssl=1'
+                    },
+                    {
+                        path: 'https://i.pinimg.com/originals/c1/df/4b/c1df4b684b8f0ba53a9796a98c8165e5.jpg'
+                    },
+                    {
+                        path: 'https://i.pinimg.com/originals/02/53/97/025397901b2e605efee8bee0b042afdf.jpg'
+                    }
+                ],
+                alt_image: 'Chapultepec',
+                shortDescription: 'El Bosque de Chapultepec es uno de los parques urbanos más grandes del mundo y uno de los más visitados en la Ciudad de México.',
+                prices: [
+                    {
+                        name:'Publico general',
+                        average: '80.00',
+                    },
+                    {
+                        name: 'Menores de 13 años',
+                        average: 'gratis',
+                    },
+                    {
+                        name: 'Mayores de 60 años',
+                        average: 'gratis',
+                    },
+                    {
+                        name: 'Discapacitados y jubilados',
+                        average: 'gratis',
+                    }
+                ],
+                reviews: 5,
+                totalcount: 398,
+                inclution: [
+                    {
+                        name: 'Discapacidad Física',
+                        icon: FaceFrownIcon,
+                        iconForeground: 'text-teal-700',
+                        iconBackground: 'bg-teal-50',
+                        text: 'Este lugar es accesible para personas con discapacidad física.'
+                    },
+                    {
+                        name: 'Todas las edades',
+                        icon: UserGroupIcon,
+                        iconForeground: 'text-indigo-700',
+                        iconBackground: 'bg-indigo-50',
+                        text: 'Este lugar es para todas las Edades.'
+                    },
+                ],
+                days: [
+                    {
+                        name: 'lunes',
+                        horario: 'cerrado'
+                    },
+                    {
+                        name: 'martes',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'miércoles',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'jueves',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'viernes',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'sábado',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'domingo',
+                        horario: '9:00 - 17:00'
+                    }
+                ]
+            },
             {
                 id: 'palacio-de-bellas-artes',
                 name: 'Palacio de Bellas Artes',
                 description: 'El Palacio de Bellas Artes es la casa máxima de la expresión de la cultura en México y en él se presentan las manifestaciones artísticas más representativas de la humanidad. Es un edificio emblemático de la Ciudad de México y uno de los más importantes en el continente americano. Su construcción se inició en 1904 y se concluyó en 1934. En su interior se encuentran murales de los más grandes artistas mexicanos, como Diego Rivera, Rufino Tamayo, David Alfaro Siqueiros, José Clemente Orozco, entre otros.',
                 image: 'https://proopera.org.mx/wp-content/uploads/2020/01/1-Palacio-de-Bellas-Artes.jpg',
-                image2: 'https://proopera.org.mx/wp-content/uploads/2020/01/1-Palacio-de-Bellas-Artes.jpg',
-                image3: 'https://proopera.org.mx/wp-content/uploads/2020/01/1-Palacio-de-Bellas-Artes.jpg',
-                image4: 'https://proopera.org.mx/wp-content/uploads/2020/01/1-Palacio-de-Bellas-Artes.jpg',
-                alt_image: 'Palacio de Bellas Artes',
-                shortDescription: 'El Palacio de Bellas Artes es la casa máxima de la expresión de la cultura en México y en él se presentan las manifestaciones artísticas más representativas de la humanidad.',
-                prices: [
+                corousel:[
                     {
-                        name:'Entrada general',
-                        average: 80.00,
+                        path: 'https://img.locationscout.net/images/2016-05/palacio-de-bellas-artes-mexico-city-mexico_l.jpeg'
                     },
                     {
-                        name: 'Entrada gratis los domingos',
+                        path: 'https://mxcity.mx/wp-content/uploads/2015/03/bellasartes1-2-1-1024x768.jpg'
+                    },
+                    {
+                        path: 'https://inba.gob.mx/multimedia/prensa/galerias/14629/14629-IMG_BG_POST-palacio_de_bellas_artes_1.jpeg'
+                    },
+                    {
+                        path: 'https://files.ocula.com/anzax/72/7236bf15-c719-4f07-aed6-01490d2fb026_1200_877.jpg'
+                    }
+                ],
+                alt_image: 'Palacio de Bellas Artes',
+                shortDescription: 'El Palacio de Bellas Artes, epicentro de la cultura y las artes en México.',
+                prices: [
+                    {
+                        name:'Publico general',
+                        average: '80.00',
+                    },
+                    {
+                        name: 'Menores de 13 años',
+                        average: 'gratis',
+                    },
+                    {
+                        name: 'Mayores de 60 años',
+                        average: 'gratis',
+                    },
+                    {
+                        name: 'Discapacitados y jubilados',
                         average: 'gratis',
                     }
                 ],
@@ -203,52 +144,48 @@ const experiences = [
                 totalcount: 421,
                 inclution: [
                     {
-                        name: 'Física',
+                        name: 'Discapacidad Física',
                         icon: FaceFrownIcon,
                         iconForeground: 'text-teal-700',
                         iconBackground: 'bg-teal-50',
-                        text: 'Este lugar no es accesible para personas con discapacidad física.'
+                        text: 'Este lugar es accesible para personas con discapacidad física.'
                     },
                     {
-                        name: 'Visual',
-                        icon: EyeIcon,
-                        iconForeground: 'text-purple-700',
-                        iconBackground: 'bg-purple-50',
-                        text: 'Este lugar es ideal para personas con discapacidad Visual.'
-                    },
-                    {
-                        name: 'Auditiva',
-                        icon: SpeakerWaveIcon,
-                        iconForeground: 'text-sky-700',
-                        iconBackground: 'bg-sky-50',
-                        text: 'Este lugar es ideal para personas con discapacidad Auditiva.'
-                    },
-                    {
-                        name: 'Pet-friendly',
-                        icon: BugAntIcon,
-                        iconForeground: 'text-rose-700',
-                        iconBackground: 'bg-rose-50',
-                        text: 'Este lugar es ideal para disfrutar con tu mascota.'
-                    },
-                    {
-                        name: 'Genero',
-                        icon: UserGroupIcon,
-                        iconForeground: 'text-yellow-700', iconBackground: 'bg-yellow-50',
-                        text: 'Este lugar es para todas las personas, sin importar su género.'
-                    },
-                    {
-                        name: 'Edad',
+                        name: 'Todas las edades',
                         icon: UserMinusIcon,
                         iconForeground: 'text-indigo-700',
                         iconBackground: 'bg-indigo-50',
                         text: 'Este lugar es para todas las Edades.'
                     },
+                ],
+                days: [
                     {
-                        name: 'Emocional',
-                        icon: HeartIcon,
-                        iconForeground: 'text-teal-700',
-                        iconBackground: 'bg-teal-50',
-                        text: 'Este lugar es ideal para disfrutar en familia, con amigos o en pareja.'
+                        name: 'lunes',
+                        horario: 'cerrado'
+                    },
+                    {
+                        name: 'martes',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'miércoles',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'jueves',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'viernes',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'sábado',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'domingo',
+                        horario: '9:00 - 17:00'
                     }
                 ]
             },
@@ -257,18 +194,37 @@ const experiences = [
                 name: 'Museo Nacional de Antropología',
                 description: 'El Museo Nacional de Antropología es uno de los recintos culturales más importantes de México y de América Latina. Su misión es investigar, conservar, exhibir y difundir los testimonios materiales de los pueblos y culturas indígenas de México, así como de las culturas prehispánicas de otros pueblos del mundo, con el fin de promover la reflexión, el conocimiento y el resPeto a la diversidad cultural.',
                 image: 'https://cdn-3.expansion.mx/dims4/default/c9fcf73/2147483647/strip/true/crop/1024x768+0+0/resize/1600x1200!/quality/90/?url=https:%2F%2Fcherry-brightspot.s3.amazonaws.com%2F6b%2F2f%2Fbc08270f4fb09b3cc952919ab47f%2Fmuseo-asntropologia.jpg',
-                image2: 'https://cdn-3.expansion.mx/dims4/default/c9fcf73/2147483647/strip/true/crop/1024x768+0+0/resize/1600x1200!/quality/90/?url=https:%2F%2Fcherry-brightspot.s3.amazonaws.com%2F6b%2F2f%2Fbc08270f4fb09b3cc952919ab47f%2Fmuseo-asntropologia.jpg',
-                image3: 'https://cdn-3.expansion.mx/dims4/default/c9fcf73/2147483647/strip/true/crop/1024x768+0+0/resize/1600x1200!/quality/90/?url=https:%2F%2Fcherry-brightspot.s3.amazonaws.com%2F6b%2F2f%2Fbc08270f4fb09b3cc952919ab47f%2Fmuseo-asntropologia.jpg',
-                image4: 'https://cdn-3.expansion.mx/dims4/default/c9fcf73/2147483647/strip/true/crop/1024x768+0+0/resize/1600x1200!/quality/90/?url=https:%2F%2Fcherry-brightspot.s3.amazonaws.com%2F6b%2F2f%2Fbc08270f4fb09b3cc952919ab47f%2Fmuseo-asntropologia.jpg',
+                corousel:[
+                    {
+                        path: 'https://commonmuse.co/wp-content/uploads/2019/07/MNA1-scaled.jpg'
+                    },
+                    {
+                        path: 'https://mxcity.mx/wp-content/uploads/2018/10/MuseoNacionaldeAntropologia-Mexico-007.jpg'
+                    },
+                    {
+                        path: 'https://i2.wp.com/www.maravillasenmexico.com.mx/wp-content/uploads/2014/12/museo-nacional-1.jpg?w=1280'
+                    },
+                    {
+                        path: 'https://i.pinimg.com/originals/e3/6d/2b/e36d2b89d6a4c9ec00a34ec909055216.jpg'
+                    }
+                ],
                 alt_image: 'Museo Nacional de Antropología',
                 shortDescription: 'El Museo Nacional de Antropología es uno de los recintos culturales más importantes de México y de América Latina.',
                 prices: [
                     {
-                        name:'Entrada general',
-                        average: 95.00,
+                        name:'Publico general',
+                        average: '80.00',
                     },
                     {
-                        name: 'Entrada gratis los domingos',
+                        name: 'Menores de 13 años',
+                        average: 'gratis',
+                    },
+                    {
+                        name: 'Mayores de 60 años',
+                        average: 'gratis',
+                    },
+                    {
+                        name: 'Discapacitados y jubilados',
                         average: 'gratis',
                     }
                 ],
@@ -276,52 +232,48 @@ const experiences = [
                 totalcount: 145,
                 inclution: [
                     {
-                        name: 'Física',
+                        name: 'Discapacidad Física',
                         icon: FaceFrownIcon,
                         iconForeground: 'text-teal-700',
                         iconBackground: 'bg-teal-50',
-                        text: 'Este lugar no es accesible para personas con discapacidad física.'
+                        text: 'Este lugar es accesible para personas con discapacidad física.'
                     },
                     {
-                        name: 'Visual',
-                        icon: EyeIcon,
-                        iconForeground: 'text-purple-700',
-                        iconBackground: 'bg-purple-50',
-                        text: 'Este lugar es ideal para personas con discapacidad Visual.'
-                    },
-                    {
-                        name: 'Auditiva',
-                        icon: SpeakerWaveIcon,
-                        iconForeground: 'text-sky-700',
-                        iconBackground: 'bg-sky-50',
-                        text: 'Este lugar es ideal para personas con discapacidad Auditiva.'
-                    },
-                    {
-                        name: 'Pet-friendly',
-                        icon: BugAntIcon,
-                        iconForeground: 'text-rose-700',
-                        iconBackground: 'bg-rose-50',
-                        text: 'Este lugar es ideal para disfrutar con tu mascota.'
-                    },
-                    {
-                        name: 'Genero',
-                        icon: UserGroupIcon,
-                        iconForeground: 'text-yellow-700', iconBackground: 'bg-yellow-50',
-                        text: 'Este lugar es para todas las personas, sin importar su género.'
-                    },
-                    {
-                        name: 'Edad',
+                        name: 'Todas las edades',
                         icon: UserMinusIcon,
                         iconForeground: 'text-indigo-700',
                         iconBackground: 'bg-indigo-50',
                         text: 'Este lugar es para todas las Edades.'
                     },
+                ],
+                days: [
                     {
-                        name: 'Emocional',
-                        icon: HeartIcon,
-                        iconForeground: 'text-teal-700',
-                        iconBackground: 'bg-teal-50',
-                        text: 'Este lugar es ideal para disfrutar en familia, con amigos o en pareja.'
+                        name: 'lunes',
+                        horario: 'cerrado'
+                    },
+                    {
+                        name: 'martes',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'miércoles',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'jueves',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'viernes',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'sábado',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'domingo',
+                        horario: '9:00 - 17:00'
                     }
                 ]
             },
@@ -330,142 +282,86 @@ const experiences = [
                 name: 'Zócalo',
                 description: 'El Zócalo es la plaza principal de la Ciudad de México y una de las más grandes del mundo. En ella se encuentran edificios históricos como la Catedral Metropolitana, el Palacio Nacional y el Antiguo Palacio del Ayuntamiento. Es un lugar emblemático de la ciudad y un punto de encuentro para los habitantes y visitantes de la capital mexicana.',
                 image: 'https://a.cdn-hotels.com/gdcs/production135/d698/e31019f6-9bff-4442-a871-7fc42baeee4a.jpg',
-                image2: 'https://a.cdn-hotels.com/gdcs/production135/d698/e31019f6-9bff-4442-a871-7fc42baeee4a.jpg',
-                image3: 'https://a.cdn-hotels.com/gdcs/production135/d698/e31019f6-9bff-4442-a871-7fc42baeee4a.jpg',
-                image4: 'https://a.cdn-hotels.com/gdcs/production135/d698/e31019f6-9bff-4442-a871-7fc42baeee4a.jpg',
-                alt_image: 'Zócalo',
+                corousel:[
+                    {
+                        path: 'https://selecciones.com.mx/wp-content/uploads/2017/07/zocalo_2-1024x758.jpg'
+                    },
+                    {
+                        path: 'https://www.elsoldemexico.com.mx/incoming/aratf2-zocalo.jpg/ALTERNATES/LANDSCAPE_1140/zocalo.jpg'
+                    },
+                    {
+                        path: 'https://traveler.marriott.com/es/wp-content/uploads/sites/2/2018/05/GI-638921937-Mexico-City-Zocalo-1920x1080-1.jpg'
+                    },
+                    {
+                        path: 'https://img.chilango.com/2019/02/Cotidiana_Zocalo_-1.jpg'
+                    }
+                ],
+                alt_image: 'Zocalo',
                 shortDescription: 'El Zócalo es la plaza principal de la Ciudad de México y una de las más grandes del mundo.',
                 prices: [
                     {
-                        name:'libre acceso',
-                        average: 0,
+                        name:'Publico general',
+                        average: 'gratis',
                     },
                     {
-
+                        name: 'Menores de 13 años',
+                        average: 'gratis',
+                    },
+                    {
+                        name: 'Mayores de 60 años',
+                        average: 'gratis',
+                    },
+                    {
+                        name: 'Discapacitados y jubilados',
+                        average: 'gratis',
                     }
                 ],
                 reviews: 4,
                 totalcount: 465,
                 inclution: [
                     {
-                        name: 'Física',
+                        name: 'Discapacidad Física',
                         icon: FaceFrownIcon,
                         iconForeground: 'text-teal-700',
                         iconBackground: 'bg-teal-50',
-                        text: 'Este lugar no es accesible para personas con discapacidad física.'
+                        text: 'Este lugar es accesible para personas con discapacidad física.'
                     },
                     {
-                        name: 'Visual',
-                        icon: EyeIcon,
-                        iconForeground: 'text-purple-700',
-                        iconBackground: 'bg-purple-50',
-                        text: 'Este lugar es ideal para personas con discapacidad Visual.'
-                    },
-                    {
-                        name: 'Auditiva',
-                        icon: SpeakerWaveIcon,
-                        iconForeground: 'text-sky-700',
-                        iconBackground: 'bg-sky-50',
-                        text: 'Este lugar es ideal para personas con discapacidad Auditiva.'
-                    },
-                    {
-                        name: 'Pet-friendly',
-                        icon: BugAntIcon,
-                        iconForeground: 'text-rose-700',
-                        iconBackground: 'bg-rose-50',
-                        text: 'Este lugar es ideal para disfrutar con tu mascota.'
-                    },
-                    {
-                        name: 'Genero',
-                        icon: UserGroupIcon,
-                        iconForeground: 'text-yellow-700', iconBackground: 'bg-yellow-50',
-                        text: 'Este lugar es para todas las personas, sin importar su género.'
-                    },
-                    {
-                        name: 'Edad',
+                        name: 'Todas las edades',
                         icon: UserMinusIcon,
                         iconForeground: 'text-indigo-700',
                         iconBackground: 'bg-indigo-50',
                         text: 'Este lugar es para todas las Edades.'
                     },
-                    {
-                        name: 'Emocional',
-                        icon: HeartIcon,
-                        iconForeground: 'text-teal-700',
-                        iconBackground: 'bg-teal-50',
-                        text: 'Este lugar es ideal para disfrutar en familia, con amigos o en pareja.'
-                    }
-                ]
-            },
-            {
-                id: 'chapultepec',
-                name: 'Chapultepec',
-                description: 'El Bosque de Chapultepec es uno de los parques urbanos más grandes del mundo y uno de los más visitados en la Ciudad de México. En él se encuentran diversos atractivos turísticos como el Castillo de Chapultepec, el Museo de Historia Natural, el Museo de Arte Moderno, el Lago de Chapultepec, el Zoológico de Chapultepec, entre otros. Es un lugar ideal para disfrutar de la naturaleza, la cultura y la historia en medio de la ciudad.',
-                image: 'https://mymodernmet.com/wp/wp-content/uploads/2020/05/Castillo-Chapultepec-4.jpg',
-                image2: 'https://mymodernmet.com/wp/wp-content/uploads/2020/05/Castillo-Chapultepec-4.jpg',
-                image3: 'https://mymodernmet.com/wp/wp-content/uploads/2020/05/Castillo-Chapultepec-4.jpg',
-                image4: 'https://mymodernmet.com/wp/wp-content/uploads/2020/05/Castillo-Chapultepec-4.jpg',
-                alt_image: 'Chapultepec',
-                shortDescription: 'El Bosque de Chapultepec es uno de los parques urbanos más grandes del mundo y uno de los más visitados en la Ciudad de México.',
-                prices: [
-                    {
-                        name:'libre acceso',
-                        average: 0,
-                    },
-                    {
-
-                    }
                 ],
-                reviews: 4,
-                totalcount: 398,
-                inclution: [
+                days: [
                     {
-                        name: 'Física',
-                        icon: FaceFrownIcon,
-                        iconForeground: 'text-teal-700',
-                        iconBackground: 'bg-teal-50',
-                        text: 'Este lugar no es accesible para personas con discapacidad física.'
+                        name: 'lunes',
+                        horario: '24hrs'
                     },
                     {
-                        name: 'Visual',
-                        icon: EyeIcon,
-                        iconForeground: 'text-purple-700',
-                        iconBackground: 'bg-purple-50',
-                        text: 'Este lugar es ideal para personas con discapacidad Visual.'
+                        name: 'martes',
+                        horario: '24hrs'
                     },
                     {
-                        name: 'Auditiva',
-                        icon: SpeakerWaveIcon,
-                        iconForeground: 'text-sky-700',
-                        iconBackground: 'bg-sky-50',
-                        text: 'Este lugar es ideal para personas con discapacidad Auditiva.'
+                        name: 'miércoles',
+                        horario: '24hrs'
                     },
                     {
-                        name: 'Pet-friendly',
-                        icon: BugAntIcon,
-                        iconForeground: 'text-rose-700',
-                        iconBackground: 'bg-rose-50',
-                        text: 'Este lugar es ideal para disfrutar con tu mascota.'
+                        name: 'jueves',
+                        horario: '24hrs'
                     },
                     {
-                        name: 'Genero',
-                        icon: UserGroupIcon,
-                        iconForeground: 'text-yellow-700', iconBackground: 'bg-yellow-50',
-                        text: 'Este lugar es para todas las personas, sin importar su género.'
+                        name: 'viernes',
+                        horario: '24hrs'
                     },
                     {
-                        name: 'Edad',
-                        icon: UserMinusIcon,
-                        iconForeground: 'text-indigo-700',
-                        iconBackground: 'bg-indigo-50',
-                        text: 'Este lugar es para todas las Edades.'
+                        name: 'sábado',
+                        horario: '24hrs'
                     },
                     {
-                        name: 'Emocional',
-                        icon: HeartIcon,
-                        iconForeground: 'text-teal-700',
-                        iconBackground: 'bg-teal-50',
-                        text: 'Este lugar es ideal para disfrutar en familia, con amigos o en pareja.'
+                        name: 'domingo',
+                        horario: '24hrs'
                     }
                 ]
             },
@@ -474,73 +370,178 @@ const experiences = [
                 name: 'Xochimilco',
                 description: 'Xochimilco es uno de los barrios más antiguos y pintorescos de la Ciudad de México y uno de los lugares más visitados por los turistas. Es conocido por sus canales, sus trajineras, sus chinampas y sus fiestas tradicionales. En Xochimilco se pueden disfrutar de paseos en trajinera, recorridos por los canales, visitas a los mercados y a los jardines botánicos, entre otras actividades. Es un lugar ideal para conocer la cultura y la tradición mexicana.',
                 image: 'https://cdn.getyourguide.com/img/location/5776711238b1b.jpeg/88.jpg',
-                image2: 'https://cdn2.uvnimg.com/17/d7/31afa1394caf9d534b9567b0761b/gettyimages-518604790.jpg',
-                image3: 'https://cdn2.uvnimg.com/17/d7/31afa1394caf9d534b9567b0761b/gettyimages-518604790.jpg',
-                image4: 'https://cdn2.uvnimg.com/17/d7/31afa1394caf9d534b9567b0761b/gettyimages-518604790.jpg',
+                corousel:[
+                    {
+                        path: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Xochimilco_trajineras.jpg'
+                    },
+                    {
+                        path: 'https://topadventure.com/img/2020/11/13/xoximilco_cancun_1.jpg'
+                    },
+                    {
+                        path: 'https://www.mexicocity.com/media/uploads/mexicocity.com/2019/04/mexico-1354388_1920.jpg'
+                    },
+                    {
+                        path: 'https://i.pinimg.com/originals/61/84/89/61848986214d854009b28c80f4b5256b.jpg'
+                    }
+                ],
                 alt_image: 'Xochimilco',
                 shortDescription: 'Xochimilco es uno de los barrios más antiguos y pintorescos de la Ciudad de México y uno de los lugares más visitados por los turistas.',
                 prices: [
                     {
-                        name:'libre acceso',
-                        average: 0,
+                        name:'Publico general',
+                        average: 'gratis',
                     },
                     {
-
+                        name: 'Menores de 13 años',
+                        average: 'gratis',
+                    },
+                    {
+                        name: 'Mayores de 60 años',
+                        average: 'gratis',
+                    },
+                    {
+                        name: 'Discapacitados y jubilados',
+                        average: 'gratis',
                     }
                 ],
                 reviews: 5,
                 totalcount: 756,
                 inclution: [
                     {
-                        name: 'Física',
+                        name: 'Discapacidad Física',
                         icon: FaceFrownIcon,
                         iconForeground: 'text-teal-700',
                         iconBackground: 'bg-teal-50',
-                        text: 'Este lugar no es accesible para personas con discapacidad física.'
+                        text: 'Este lugar es accesible para personas con discapacidad física.'
                     },
                     {
-                        name: 'Visual',
-                        icon: EyeIcon,
-                        iconForeground: 'text-purple-700',
-                        iconBackground: 'bg-purple-50',
-                        text: 'Este lugar es ideal para personas con discapacidad Visual.'
-                    },
-                    {
-                        name: 'Auditiva',
-                        icon: SpeakerWaveIcon,
-                        iconForeground: 'text-sky-700',
-                        iconBackground: 'bg-sky-50',
-                        text: 'Este lugar es ideal para personas con discapacidad Auditiva.'
-                    },
-                    {
-                        name: 'Pet-friendly',
-                        icon: BugAntIcon,
-                        iconForeground: 'text-rose-700',
-                        iconBackground: 'bg-rose-50',
-                        text: 'Este lugar es ideal para disfrutar con tu mascota.'
-                    },
-                    {
-                        name: 'Genero',
-                        icon: UserGroupIcon,
-                        iconForeground: 'text-yellow-700', iconBackground: 'bg-yellow-50',
-                        text: 'Este lugar es para todas las personas, sin importar su género.'
-                    },
-                    {
-                        name: 'Edad',
+                        name: 'Todas las edades',
                         icon: UserMinusIcon,
                         iconForeground: 'text-indigo-700',
                         iconBackground: 'bg-indigo-50',
                         text: 'Este lugar es para todas las Edades.'
                     },
+                ],
+                days: [
                     {
-                        name: 'Emocional',
-                        icon: HeartIcon,
-                        iconForeground: 'text-teal-700',
-                        iconBackground: 'bg-teal-50',
-                        text: 'Este lugar es ideal para disfrutar en familia, con amigos o en pareja.'
+                        name: 'lunes',
+                        horario: 'cerrado'
+                    },
+                    {
+                        name: 'martes',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'miércoles',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'jueves',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'viernes',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'sábado',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'domingo',
+                        horario: '9:00 - 17:00'
                     }
                 ]
                 
+                
+            },
+            {
+                id: 'angel-de-la-independencia',
+                name: 'El Ángel de la Independencia',
+                description: '',
+                image: 'https://a.cdn-hotels.com/gdcs/production98/d910/dd75e788-3f7a-4ede-8326-94a9025c226d.jpg',
+                corousel:[
+                    {
+                        path: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Xochimilco_trajineras.jpg'
+                    },
+                    {
+                        path: 'https://topadventure.com/img/2020/11/13/xoximilco_cancun_1.jpg'
+                    },
+                    {
+                        path: 'https://www.mexicocity.com/media/uploads/mexicocity.com/2019/04/mexico-1354388_1920.jpg'
+                    },
+                    {
+                        path: 'https://i.pinimg.com/originals/61/84/89/61848986214d854009b28c80f4b5256b.jpg'
+                    }
+                ],
+                alt_image: 'Xochimilco',
+                shortDescription: 'Xochimilco es uno de los barrios más antiguos y pintorescos de la Ciudad de México y uno de los lugares más visitados por los turistas.',
+                prices: [
+                    {
+                        name:'Publico general',
+                        average: 'gratis',
+                    },
+                    {
+                        name: 'Menores de 13 años',
+                        average: 'gratis',
+                    },
+                    {
+                        name: 'Mayores de 60 años',
+                        average: 'gratis',
+                    },
+                    {
+                        name: 'Discapacitados y jubilados',
+                        average: 'gratis',
+                    }
+                ],
+                reviews: 5,
+                totalcount: 756,
+                inclution: [
+                    {
+                        name: 'Discapacidad Física',
+                        icon: FaceFrownIcon,
+                        iconForeground: 'text-teal-700',
+                        iconBackground: 'bg-teal-50',
+                        text: 'Este lugar es accesible para personas con discapacidad física.'
+                    },
+                    {
+                        name: 'Todas las edades',
+                        icon: UserMinusIcon,
+                        iconForeground: 'text-indigo-700',
+                        iconBackground: 'bg-indigo-50',
+                        text: 'Este lugar es para todas las Edades.'
+                    },
+                ],
+                days: [
+                    {
+                        name: 'lunes',
+                        horario: 'cerrado'
+                    },
+                    {
+                        name: 'martes',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'miércoles',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'jueves',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'viernes',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'sábado',
+                        horario: '9:00 - 17:00'
+                    },
+                    {
+                        name: 'domingo',
+                        horario: '9:00 - 17:00'
+                    }
+                ]
                 
             }
         ]

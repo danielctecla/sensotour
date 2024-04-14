@@ -11,7 +11,10 @@ import { MagnifyingGlassMinusIcon } from '@heroicons/react/24/solid'
 
 const MapaMobile = ({ selectedState, setSelectedState }) => {
   // Estado inicial del mapa
-  const initialPosition = { coordinates: [-102, 24], zoom: 1.2 }
+  const initialPosition = {
+    coordinates: [-99.13897191401156, 19.277778554181303],
+    zoom: 4,
+  }
   const [position, setPosition] = useState(initialPosition)
 
   const handleGeographyClick = (geo) => {

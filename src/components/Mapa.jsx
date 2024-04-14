@@ -12,20 +12,23 @@ import { getIdByName } from '@/data/statesid.data'
 
 const Mapa = ({ selectedState, setSelectedState }) => {
   // Estado inicial del mapa
-  const initialPosition = { coordinates: [-102, 24], zoom: 1 }
+  const initialPosition = {
+    coordinates: [-99.13897191401156, 19.277778554181303],
+    zoom: 4,
+  }
   const [position, setPosition] = useState(initialPosition)
 
   const navigate = useNavigate()
 
   const handleGeographyClick = (geo) => {
     const centroid = geoCentroid(geo)
+    console.log(centroid)
     setPosition({
       coordinates: centroid,
       zoom: 4, // Ajusta el nivel de zoom según necesites
     })
     setSelectedState(geo.properties.state_name)
     const id = getIdByName(geo.properties.state_name)
-    navigate(`/${id}`)
   }
 
   // Función para disminuir el zoom al nivel inicial y reajustar el centro del mapa al punto inicial
@@ -65,7 +68,6 @@ const Mapa = ({ selectedState, setSelectedState }) => {
           width={300}
           height={150}
           data-tip=""
-          style={{ width: '100%', height: '100%' }}
         >
           <ZoomableGroup center={position.coordinates} zoom={position.zoom}>
             <Geographies geography={mexicoMap}>

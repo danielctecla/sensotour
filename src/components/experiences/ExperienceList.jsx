@@ -27,12 +27,8 @@ export default function ExperienceList({ data }) {
                 />
               </div>
               <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
-                <h3>{experience.name}</h3>
-                {/* <p>{product.price}</p> */}
+                <h3 className="text-2xl flex">{experience.name}</h3>
               </div>
-              <p className="mt-1 text-sm italic text-gray-500">
-                {experience.shortDescription}
-              </p>
             </a>
           ))}
         </div>
