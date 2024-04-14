@@ -28,13 +28,13 @@ function VideoCarousel({ videos }) {
     <div className="video-carousel">
       <button
         onClick={toggleMute}
-        className="unmute-button bg-white text-black px-4 py-1 rounded-2 my-4 font-semibold"
+        className="unmute-button bg-white text-black rounded-2 px-2 my-4 font-semibold"
       >
         {muted ? 'Sonido' : 'Silenciar'}
       </button>
       <Slider {...settings}>
         {videos.map((video, index) => (
-          <div className="flex justify-center">
+          <div className="h-lg w-lg">
             <div key={index}>
               <video
                 ref={videoRefs.current[index]}

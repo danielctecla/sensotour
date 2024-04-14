@@ -1,6 +1,6 @@
 export default function MainLayout() {
   return (
-    <main className="text-black h-full w-full">
+    <main className="text-black bg-gray-800 h-full w-full">
       <Navbar />
       <div className="">
         {/* Main content goes here */}

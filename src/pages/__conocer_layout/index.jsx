@@ -102,7 +102,7 @@ export default function index() {
         Estado Seleccionado: {selectedState}
       </div> */}
 
-      <div className=" bg-gray-800 rounded-4 w-90% h-100% p-b-8">
+      <div className=" bg-gray-800 rounded-4 p-b-8">
         <div className="flex justify-center">
           <div className="bg-base px-4 py-2 m-t-4 rounded-3 text-white font-bold text-md">
             {/* <PlayCircleIcon class="h-6 w-6 text-white" /> */}
@@ -126,11 +126,11 @@ export default function index() {
         </div>
 
         <div className="flex justify-center">
-          <div className=" w-full h-full mx-8 lg:hidden">
+          <div className=" w-full h-full mx-8 md:hidden">
             <VideoCarousel videos={videosMobile} />
             {/* <VideoCarousel className="hidden lg:block" videos={videosD} /> */}
           </div>
-          <div className=" w-full h-full mx-8 hidden lg:block">
+          <div className=" w-full h-full mx-8 hidden md:block">
             <VideoCarousel videos={videosD} />
             {/* <VideoCarousel className="hidden lg:block" videos={videosD} /> */}
           </div>
