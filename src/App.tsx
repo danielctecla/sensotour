@@ -18,6 +18,13 @@ const routes_ = [
     ],
   },
   {
+    path: '/:id',
+    element: <MainLayout />,
+    children: [
+      { path: '', element: <Index /> },
+    ],
+  },
+  {
     path: '/experiencias/:id',
     element: <MainLayout />,
     children: [

@@ -2,56 +2,45 @@ import { useState } from 'react'
 import { StarIcon } from '@heroicons/react/24/solid'
 import { RadioGroup } from '@headlessui/react'
 import { getExperienceById } from '@/data/experiences.data'
-
-const product = {
-  name: 'Basic Tee 6-Pack',
-  price: '$192',
-  href: '#',
-  images: [
-    {
-      src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-secondary-product-shot.jpg',
-      alt: 'Two each of gray, white, and black shirts laying flat.',
-    },
-    {
-      src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg',
-      alt: 'Model wearing plain black basic tee.',
-    },
-    {
-      src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg',
-      alt: 'Model wearing plain gray basic tee.',
-    },
-    {
-      src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg',
-      alt: 'Model wearing plain white basic tee.',
-    },
-  ],
-  colors: [
-    { name: 'White', class: 'bg-white', selectedClass: 'ring-gray-400' },
-    { name: 'Gray', class: 'bg-gray-200', selectedClass: 'ring-gray-400' },
-    { name: 'Black', class: 'bg-gray-900', selectedClass: 'ring-gray-900' },
-  ],
-  sizes: [
-    { name: 'XXS', inStock: false },
-    { name: 'XS', inStock: true },
-    { name: 'S', inStock: true },
-    { name: 'M', inStock: true },
-    { name: 'L', inStock: true },
-    { name: 'XL', inStock: true },
-    { name: '2XL', inStock: true },
-    { name: '3XL', inStock: true },
-  ],
-  description:
-    'The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our exclusive colorway: "Black". Need to add an extra pop of color to your outfit? Our white tee has you covered.',
-  highlights: [
-    'Hand cut and sewn locally',
-    'Dyed with our proprietary colors',
-    'Pre-washed & pre-shrunk',
-    'Ultra-soft 100% cotton',
-  ],
-  details:
-    'The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming "Charcoal Gray" limited release.',
-}
-const reviews = { href: '#', average: 4, totalCount: 117 }
+import { AcademicCapIcon } from '@heroicons/react/24/solid'
+const actions = [
+  {
+    title: 'Request time off',
+    href: '#',
+    icon: AcademicCapIcon,
+    iconForeground: 'text-teal-700',
+    iconBackground: 'bg-teal-50',
+  },
+  {
+    title: 'Benefits',
+    href: '#',
+    icon: AcademicCapIcon,
+    iconForeground: 'text-purple-700',
+    iconBackground: 'bg-purple-50',
+  },
+  {
+    title: 'Schedule a one-on-one',
+    href: '#',
+    icon: AcademicCapIcon,
+    iconForeground: 'text-sky-700',
+    iconBackground: 'bg-sky-50',
+  },
+  { title: 'Payroll', href: '#', icon: AcademicCapIcon, iconForeground: 'text-yellow-700', iconBackground: 'bg-yellow-50' },
+  {
+    title: 'Submit an expense',
+    href: '#',
+    icon: AcademicCapIcon,
+    iconForeground: 'text-rose-700',
+    iconBackground: 'bg-rose-50',
+  },
+  {
+    title: 'Training',
+    href: '#',
+    icon: AcademicCapIcon,
+    iconForeground: 'text-indigo-700',
+    iconBackground: 'bg-indigo-50',
+  },
+]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -65,6 +54,7 @@ export default function CompleteExperience({ experience }) {
 
   return (
     <div className="bg-white">
+      {/* Details */}
       <div className="pt-6">
         {/* Image gallery */}
         <div className="mt-6 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
@@ -179,8 +169,49 @@ export default function CompleteExperience({ experience }) {
 
             
           </div>
+          <div className="rounded-lg mx-auto lg:col-span-2  overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px">
+        
+        {info.inclution.map((action, actionIdx) => (
+          <div
+            key={action.name}
+            className={classNames(
+              actionIdx === 0 ? 'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none' : '',
+              actionIdx === 1 ? 'sm:rounded-tr-lg' : '',
+              actionIdx === actions.length - 2 ? 'sm:rounded-bl-lg' : '',
+              actionIdx === actions.length - 1 ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none' : '',
+              'relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500'
+            )}
+          >
+            <div>
+              <span
+                className={classNames(
+                  action.iconBackground,
+                  action.iconForeground,
+                  'rounded-lg inline-flex p-3 ring-4 ring-white'
+                )}
+              >
+                <action.icon className="h-6 w-6" aria-hidden="true" />
+              </span>
+            </div>
+            <div className="mt-8">
+              <h3 className="text-lg font-medium">
+                <a className="focus:outline-none">
+                  {/* Extend touch target to entire panel */}
+                  <span className="absolute inset-0" aria-hidden="true" />
+                  {action.name}
+                </a>
+              </h3>
+              <p className="mt-2 text-sm text-gray-500">
+                {action.text}
+              </p>
+            </div>
+            
+          </div>
+        ))}
+      </div>
         </div>
       </div>
+      
     </div>
   )
 }

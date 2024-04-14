@@ -16,6 +16,7 @@
     "@julr/unocss-preset-forms": "^0.1.0",
     "@unocss/reset": "^0.58.6",
     "ahooks": "^3.7.10",
+    "axios": "^1.6.8",
     "d3-geo": "^3.1.1",
     "nprogress": "^0.2.0",
     "prop-types": "^15.8.1",
@@ -24,7 +25,9 @@
     "react-router": "^6.22.3",
     "react-router-dom": "^6.22.3",
     "react-simple-maps": "^1.0.0",
+    "react-slick": "^0.30.2",
     "react-tooltip": "^5.26.3",
+    "slick-carousel": "^1.8.1",
     "topojson-client": "^3.1.0",
     "vite-plugin-svgr": "^4.2.0"
   },

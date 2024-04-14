@@ -1,12 +1,15 @@
 const navigation = {
     Equipo: [
-      { name: 'Tecla', href: 'https://github.com/danielctecla' },
-      { name: 'Manuel', href: 'https://github.com/mvnueloc' },
+      { name: 'Artemisa', href: '#'     },
+      { name: 'Daniel Catonga Tecla', href: 'https://github.com/danielctecla' },
+      { name: 'Manuel Olguin Castillo', href: 'https://github.com/mvnueloc' },
+      { name: 'Emilio', href: '#' },
+      
     ],
     social: [
       {
         name: 'GitHub',
-        href: 'https://github.com/danielctecla/sensotur-hack',
+        href: 'https://github.com/danielctecla/sensotour',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path

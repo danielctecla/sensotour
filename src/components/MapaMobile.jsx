@@ -8,28 +8,23 @@ import {
 import { geoCentroid } from 'd3-geo'
 import mexicoMap from '../../data/mx.json'
 import { MagnifyingGlassMinusIcon } from '@heroicons/react/24/solid'
-import { getIdByName } from '@/data/statesid.data'
 
-const Mapa = ({ selectedState, setSelectedState }) => {
+const MapaMobile = ({ selectedState, setSelectedState }) => {
   // Estado inicial del mapa
-  const initialPosition = { coordinates: [-102, 24], zoom: 1 }
+  const initialPosition = { coordinates: [-102, 24], zoom: 1.2 }
   const [position, setPosition] = useState(initialPosition)
-
-  const navigate = useNavigate()
 
   const handleGeographyClick = (geo) => {
     const centroid = geoCentroid(geo)
     setPosition({
       coordinates: centroid,
-      zoom: 4, // Ajusta el nivel de zoom según necesites
+      zoom: 3, // Ajusta el nivel de zoom según necesites
     })
     setSelectedState(geo.properties.state_name)
-    const id = getIdByName(geo.properties.state_name)
-    navigate(`/${id}`)
   }
 
-  // Función para disminuir el zoom al nivel inicial y reajustar el centro del mapa al punto inicial
-  const handleZoomOut = () => {
+  // Función para restablecer el zoom y la posición del mapa al estado inicial
+  const handleResetOut = () => {
     setPosition({
       coordinates: initialPosition.coordinates,
       zoom: 1, // Ajusta el zoom al nivel mínimo
@@ -37,33 +32,27 @@ const Mapa = ({ selectedState, setSelectedState }) => {
   }
 
   return (
-    <div className="border-3 border-base rounded-4">
+    <div className="border-y-2 border-base">
       <div className="grid grid-cols-3 my-4">
         <div className="flex justify-start items-center ml-6">
           <button
-            className="py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded-md text-lg"
-            onClick={handleZoomOut}
+            className="py-2 px-4 bg-blue-5 hover:bg-blue-7 text-white rounded-2 text-sm"
+            onClick={handleResetOut}
           >
             <div className="flex gap-2 items-center">
               Alejar
-              <MagnifyingGlassMinusIcon className="h-4 w-4 text-white" />
+              <MagnifyingGlassMinusIcon className="h-4 w-4 text-white flex items-center" />
             </div>
           </button>
         </div>
-        <div className="flex justify-center items-center">
-          <div className="bg-[#ea3060] px-4 py-2 rounded-md">
-            <h2 className="text-lg font-bold text-white">
-              Selecciona un estado
-            </h2>
-          </div>
-        </div>
       </div>
+
       <div className="h-auto w-auto flex justify-center">
         <ComposableMap
           projection="geoMercator"
-          projectionConfig={{ scale: 500 }}
+          projectionConfig={{ scale: 700 }}
           width={300}
-          height={150}
+          height={300}
           data-tip=""
           style={{ width: '100%', height: '100%' }}
         >
@@ -103,4 +92,4 @@ const Mapa = ({ selectedState, setSelectedState }) => {
   )
 }
 
-export default Mapa
+export default MapaMobile
