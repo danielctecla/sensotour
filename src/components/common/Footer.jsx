@@ -22,7 +22,7 @@ const navigation = {
   export default function Footer() {
     return (
       <footer
-        className="bg-black hidden sm:block md:pl-30"
+      className="bg-[#ea3060] hidden sm:block md:pl-30"
         aria-labelledby="footer-heading"
       >
         <h2 id="footer-heading" className="sr-only">

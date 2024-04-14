@@ -15,6 +15,7 @@ import transformerAttributifyJsx from '@unocss/transformer-attributify-jsx'
 export default defineConfig<Theme>({
   theme: {
     colors: {
+      
       primary: {
         DEFAULT: '#FFFFFF',
         50: '#5663AF',
@@ -58,18 +59,7 @@ export default defineConfig<Theme>({
         950: '#120F00',
       },
       base: {
-        DEFAULT: '#191D35',
-        50: '#5663AF',
-        100: '#4D5AA4',
-        200: '#404B88',
-        300: '#333B6C',
-        400: '#262C51',
-        500: '#191D35',
-        600: '#07080F',
-        700: '#000000',
-        800: '#000000',
-        900: '#000000',
-        950: '#000000',
+        DEFAULT: '#ea3060',
       },
       success: {
         DEFAULT: '#44F24F',

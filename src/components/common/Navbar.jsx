@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <Popover className="relative z-5">
-      <div className="grid grid-cols-3 lg:grid-cols-4 items-center bg-black px-4 py-3">
+      <div className="grid grid-cols-3 lg:grid-cols-4 items-center bg-[#ea3060] px-4 py-3">
         {/* LOGO */}
         <div className="ml-4 justify-items-start hidden lg:flex">
           <Link to="/">
@@ -61,7 +61,7 @@ export default function Navbar() {
             <Link
               key={page.name}
               to={page.to}
-              className="font-medium text-white hover:text-amarilloCoopel w-max"
+              className="text-white relative text-lg w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
             >
               {page.name}
             </Link>
